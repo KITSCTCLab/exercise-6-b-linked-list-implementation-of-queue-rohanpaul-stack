@@ -10,7 +10,6 @@ class Queue:
     self.last = None
 
  def enqueue(self, data) -> None:
-    new_node=Node(data)
     if  self.last!= None:
       self.last.next = new_node
     if self.head == None:
